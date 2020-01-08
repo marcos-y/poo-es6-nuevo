@@ -81,3 +81,50 @@ console.log(prod1);
 prod1.agregar();
 
 
+ const test = [
+    {
+        nombre:"coka",
+        precio:10
+    },
+    {
+        nombre:"pepsi",
+        precio:20
+    }
+];
+
+
+//busca objeto = a coka
+const encontrado = productos.find(producto=> producto.nombre === 'coka');
+
+//busca por nombre;
+var nomb;
+const encontrado = productos.find(producto => producto.nombre === nomb);
+
+// filter te da todas las ocurrencias q cumplan esa condiciion
+const encontrado = productos.filter(producto => producto.precio >= 10);
+console.log('se encontro',encontrado);
+
+//el return esta implicito
+const calcularCuadrado = num => num*num;
+console.log(`valor calculado: ${calcularCuadrado(2)}`);
+
+
+//NO VAMOS A USAR THIS FOO  DE ES6!!!!!!!!!!!!!!!!!!!!!!!!
+
+//dDESTRUCTURING / DESECSTRUCTURACION DE OBJETIOS //llaves cuando es objet - corchetes para array
+const nombre = producto.nombre;
+console.log(nombre);
+
+const {nombre,precio}= producto[0];
+console.log(nombre);
+
+const array = ['kevin','gomez'];
+
+const[nombre,apellido] = array;
+console.log(nombre,edad);
+
+class persona{
+    constructor({nombre,apellido,edad});
+}
+
+//MODULOS SE VE EN REACT JUNTO CON DESESTRUTURACION
